@@ -8,7 +8,7 @@ services:
 
   todofront:
     image: todofrontend
-    depends-on:
+    depends_on:
       - todoback
     ports: 
       - 3000:3000
@@ -17,7 +17,7 @@ services:
   
   todotests:
     image: todotests
-    depends-on:
+    depends_on:
       - todofront
       - todoback
     environment:
